@@ -30,7 +30,7 @@ class RK4(object):
         self.t = 0
 
 
-    def solve(self, y, h, n):
+    def solve(self, y, h, n, m=0):
 
         """
         Solve the system ODEs.
@@ -42,6 +42,7 @@ class RK4(object):
 
         t = []
         res = []
+        self.t = m
         for i in y:
             res.append([])
 
